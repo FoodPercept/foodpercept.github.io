@@ -49,7 +49,8 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
 .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
 
 header{display:flex;flex-direction:column;gap:18px}
-.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand svg{width:44px;height:28px;flex:none}
 .brand b{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.01em}
 .brand span{font-family:var(--mono);font-size:13px;color:var(--muted)}
 h1{font-size:clamp(36px,7vw,60px);font-weight:800;letter-spacing:-.025em}
@@ -113,7 +114,7 @@ footer{font-size:14px;color:var(--muted);border-top:1.5px solid var(--line);padd
 <body>
 <div class="wrap">
   <header>
-    <div class="brand"><b>FoodPercept</b><span>food perception lab</span></div>
+    <div class="brand"><svg viewBox="-160 -100 320 200" aria-hidden="true"><path d="M -150,0 Q 0,-118 150,0 Q 0,118 -150,0 Z" fill="none" stroke="var(--teal)" stroke-width="16" stroke-linejoin="round"/><circle cx="-36" r="36" fill="var(--saffron)"/><circle cx="36" r="36" fill="var(--teal)"/></svg><b>FoodPercept</b><span>food perception lab</span></div>
     <p class="eyebrow">Our mission</p>
     <h1 class="mission">Predict how food will be perceived. Design for the people who eat it.</h1>
     <p class="lede">We study how the look and make-up of food relate to what people expect before they taste and what they experience when they do. The research is under way; the models built from it are not yet validated. The goal is a perception engine that food teams can use.</p>
